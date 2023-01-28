@@ -63,8 +63,33 @@ footer {
   background-color: #404bbf;
   color: var(--background-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: color #404bbf;
 }
-
+.employees_soc_link:hover,
+.employees_soc_link:focus,
+.employees_soc_link:active {
+  background: #404bbf;
+}
+.customers_icon:hover,
+.customers_icon:focus,
+.customers_icon:active {
+  border: 1px solid #404bbf;
+  fill: #404bbf;
+}
+.footer_soc_link:hover,
+.footer_soc_link:focus,
+.footer_soc_link:active {
+  background-color: #31d0aa;
+}
+.portfolio_link:hover,
+.portfolio_link:focus,
+.portfolio_link:active {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .link_function {
   padding-bottom: 24px;
   display: block;
@@ -125,6 +150,15 @@ footer {
   padding-top: 188px;
   padding-bottom: 188px;
   display: block;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/background/people-office.jpg);
+  max-width: 1440px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container.text_order {
@@ -182,6 +216,20 @@ footer {
 .none_button {
   padding-bottom: 0px;
 }
+.categoris_image {
+  padding-left: 100px;
+  padding-right: 100px;
+  background: #f4f4fd;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 8px;
+}
+.categoris_icon {
+  background: #f4f4fd;
+  border-radius: 4px;
+}
 
 .header_of_section {
   font-size: 36px;
@@ -194,9 +242,7 @@ footer {
 }
 .our_work {
   display: flex;
-  /* margin-bottom: 120px; */
   justify-content: space-between;
-  /* padding-left: 15px; */
 }
 
 .our_team {
@@ -206,12 +252,15 @@ footer {
 }
 .employees {
   display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .box_team {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 24px;
+  /* margin-right: 24px; */
   background: var(--background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -219,7 +268,7 @@ footer {
 }
 .position_on_team {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 8px;
 }
 .name {
   font-weight: 500;
@@ -243,6 +292,48 @@ footer {
   flex-grow: 0;
 }
 
+.employees_soc_list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 32px;
+}
+.emloyees_soc_item {
+  width: 40px;
+  height: 40px;
+}
+.employees_soc_link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers {
+  padding-top: 130px;
+  display: flex;
+}
+.customers_list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.customers__block_icon {
+}
+.customers_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customers_icon {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  fill: red;
+}
+
 footer {
   background: var(--first-title-color);
   line-height: calc(24 / 16);
@@ -254,6 +345,50 @@ footer {
   margin-top: 16px;
   width: 264px;
   font-weight: 400;
+}
+
+.footer_container {
+  display: flex;
+}
+.footer_topic {
+}
+
+.footer_links {
+  margin-left: 120px;
+}
+.footers_header {
+  margin-bottom: 16px;
+
+  /* Body Medium */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+.footer_list {
+  display: flex;
+  gap: 16px;
+}
+.footer_soc_item {
+}
+.footer_soc_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  text-decoration-line: none;
+  color: var(--color-link);
+  padding: 24px;
+}
+.footer_soc_icon {
 }
 
 .buttons_links_options {
@@ -310,7 +445,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); */
   text-decoration-line: none;
   color: var(--color-link);
 }
