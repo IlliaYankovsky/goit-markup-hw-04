@@ -73,10 +73,13 @@ footer {
 .employees_soc_link:active {
   background: #404bbf;
 }
-.customers_icon:hover,
-.customers_icon:focus,
-.customers_icon:active {
-  border: 1px solid #404bbf;
+.customers_link:hover,
+.customers_link:focus,
+.customers_link:active,
+.customers_link:hover .customers_icon,
+.customers_link:focus .customers_icon,
+.customers_link:active .customers_icon {
+  border-color: #404bbf;
   fill: #404bbf;
 }
 .footer_soc_link:hover,
@@ -327,10 +330,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.customers_icon {
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  padding: 16px 32px;
+}
+.customers_icon {
   fill: #8e8f99;
 }
 
